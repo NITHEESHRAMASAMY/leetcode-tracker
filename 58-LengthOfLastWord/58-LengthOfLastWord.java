@@ -1,0 +1,15 @@
+// Last updated: 7/9/2026, 11:49:51 AM
+class Solution {
+    public int lengthOfLastWord(String s) {
+        int c=0;
+        for(int i=s.length()-1;i>=0;i--){
+            if(s.charAt(i)!=' '){
+                c++;
+            }
+            else if(c>0){
+                break;   
+            }
+        }
+        return c;
+    }
+}
